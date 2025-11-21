@@ -70,3 +70,7 @@ button.signup {
 .search-box input::placeholder {
 	color: #888;
 }
+
+.actions img {
+	height: 32px;
+}
