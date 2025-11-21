@@ -1,0 +1,72 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 40px;
+	background: white;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.logo img {
+	height: 40px;
+	margin-bottom: 12px;
+}
+.menu {
+	display: flex;
+	gap: 30px;
+	font-size: 18px;
+}
+
+.menu a {
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+}
+
+.actions {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+button.login {
+	background: black;
+	color: white;
+	padding: 6px 18px;
+	border-radius: 20px;
+	border: none;
+	font-size: 18px;
+}
+
+button.signup {
+	background: white;
+	border: 1px solid black;
+	padding: 6px 18px;
+	border-radius: 20px;
+	font-size: 18px;
+}
+
+.search-box {
+	position: relative;
+	width: 200px;
+}
+
+.search-box input {
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid black;
+	padding: 5px 0;
+	outline: none;
+	background: transparent;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+.search-box input::placeholder {
+	color: #888;
+}
