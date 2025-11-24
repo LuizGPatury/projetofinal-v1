@@ -84,8 +84,6 @@ button.signup {
 	border: none;
 	border-bottom: 2px solid black;
 	padding: 5px 0;
-	outline: none;
-	background: transparent;
 	font-size: 12px;
 	letter-spacing: 1px;
 }
@@ -109,46 +107,37 @@ button.signup {
 .start-box {
 	width: 50%;
 	background-color: #e8d8b0;
-	font-family: "Times New Roman", serif;
 	color: #000;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 40px 80px;
-	box-sizing: border-box;
+	align-items: center;
+	text-align: center;
 }
 
 .start-box h1 {
-	font-size: 96px;
+	font-size: 120px;
 	line-height: 1;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	margin-top: 0;
 	font-weight: bold;
 }
 
 .subtitle {
-	font-size: 24px;
-	letter-spacing: 1px;
-	display: inline-block; /* Necessário para o border-bottom funcionar bem */
-	border-bottom: 2px solid #000; /* Cria a linha sublinhada com afastamento */
-	padding-bottom: 5px; /* Afasta a linha do texto */
-	width: fit-content; /* A linha fica apenas do tamanho do texto */
+	font-size: 40px;
+	text-decoration: underline;
+	padding-bottom: 5px;
 	margin: 0;
-	cursor: pointer; /* Sugere que é um link/botão */
+	cursor: pointer;
 }
 
-/* --- Metade Direita (Imagem) --- */
 .start-image {
-	width: 50%; /* Ocupa a outra metade */
-	position: relative;
-	/* Remove espaços extras abaixo da imagem */
-	display: flex;
+	width: 50%;
 }
 
 .start-image img {
 	width: 100%;
 	height: 100%;
-	/* O pulo do gato: faz a imagem cobrir a área sem distorcer */
 	object-fit: cover;
-	display: block;
+	display: flex;
 }
