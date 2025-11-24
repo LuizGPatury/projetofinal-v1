@@ -95,9 +95,6 @@ button.signup {
 .start-screen {
 	width: 100%;
 	margin-bottom: 30px;
-}
-
-.start-content {
 	display: flex;
 	width: 100%;
 	align-items: stretch;
@@ -105,7 +102,7 @@ button.signup {
 }
 
 .start-box {
-	width: 50%;
+	flex: 1;
 	background-color: #e8d8b0;
 	color: #000;
 	display: flex;
@@ -132,7 +129,7 @@ button.signup {
 }
 
 .start-image {
-	width: 50%;
+	flex: 1;
 }
 
 .start-image img {
