@@ -3,11 +3,20 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+/* --- Parte superior/header/barra de nav --- */
 .navbar {
 	display: flex;
 	align-items: center;
-	padding: 20px 10px;
+	padding: 5px auto;
 	background: white;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	background-color: rgba(255, 255, 255, 0.85);
+	backdrop-filter: blur(10px);
 }
 
 .logo,
@@ -97,12 +106,14 @@ button.signup {
 	padding: 5px 0;
 	font-size: 12px;
 	letter-spacing: 1px;
+	background-color: transparent;
 }
 
 .search-box input::placeholder {
 	color: #888;
 }
 
+/* --- Tela inicial/primeiro banner --- */
 .start-screen {
 	display: flex;
 	align-items: stretch;
@@ -154,7 +165,6 @@ button.signup {
 	height: 600px;
 	flex-direction: row;
 	gap: 10px;
-	margin: auto 10px;
 }
 
 .big-box {
@@ -182,3 +192,12 @@ button.signup {
 .img2 {
 	background-color: blue;
 }
+
+/* --- teste --- */
+
+@media (max-width: 1200px) {
+	.menu {
+		display: none;
+	}
+}
+/* --- teste --- */
