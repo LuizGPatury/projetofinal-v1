@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEOCOFFEE - A coffee for the new gen</title>
+    <title>NEOCOFFEE</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/neocoffee-icon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
@@ -36,28 +38,40 @@
     </header>
     <!-- Seção da tela inicial e primeiro banner -->
     <section class="start-screen">
+        <img src="/img/3-coffees-start (1).jpg" alt="Three-Coffees" class="start-image">
         <div class="start-box">
             <h1>BREWING <br>THE<br>FUTURE</h1>
             <p class="subtitle">EXPLORE OUR PRODUCTS</p>
         </div>
-
-        <div class="start-image">
-            <img src="/img/3-coffees-start (1).jpg" alt="Three-Coffees">
-        </div>
     </section>
+
 
     <!-- Seção dos produtos/anuncios -->
     <section class="central-machinery">
         <div class="big-box">
-            <img src="img/big-coffee-machine (1).jpg" alt="big-coffee-machine">
+            <img src="img/big-coffee-machine (1).jpg" alt="Big coffee machine">
         </div>
 
         <div class="double-box1">
-            <div class="img1">
-                <img src="img/small-coffee-machine1 (1).jpg" alt="First coffee machine">
+
+            <div class="img1 relative overflow-hidden">
+                <img src="img/small-coffee-machine1 (1).jpg" alt="First coffee machine"
+                    class="w-full h-full object-cover transition duration-500 hover:scale-110">
+
+                <div class="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 
+                    transition duration-500 flex items-center justify-center">
+                    <p class="text-white text-lg tracking-wide border border-white px-4 py-2">COFFEE MACHINE 1</p>
+                </div>
             </div>
-            <div class="img2">
-                <img src="img/small-coffee-machine2 (1).jpg" alt="Second coffee machine">
+
+            <div class="img2 relative overflow-hidden">
+                <img src="img/small-coffee-machine2 (1).jpg" alt="Second coffee machine"
+                    class="w-full h-full object-cover transition duration-500 hover:scale-110">
+
+                <div class="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100
+                    transition duration-500 flex items-center justify-center">
+                    <p class="text-white text-lg tracking-wide border border-white px-4 py-2">COFFEE MACHINE 2</p>
+                </div>
             </div>
         </div>
 
@@ -65,8 +79,15 @@
             <div class="small-box1">
                 <h1>MACHINERY</h1>
             </div>
-            <div class="img2">
-                <img src="img/small-coffee-machine-3.jpg" alt="Third coffee machine">
+
+            <div class="img2 relative overflow-hidden">
+                <img src="img/small-coffee-machine-3.jpg" alt="Third coffee machine"
+                    class="w-full h-full object-cover transition duration-500 hover:scale-110">
+
+                <div class="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 
+                    transition duration-500 flex items-center justify-center">
+                    <p class="text-white text-lg tracking-wide border border-white px-4 py-2">COFFEE MACHINE 3</p>
+                </div>
             </div>
         </div>
 
@@ -81,29 +102,64 @@
             <div class="small-box1">
                 <h1>GEAR</h1>
             </div>
-            <div class="img2">
-                <img src="img/coffee-thermos (1).jpg" alt="Coffee Thermos">
+            <div class="img2 relative overflow-hidden">
+                <img src="img/coffee-thermos (1).jpg" alt="Coffee Thermos"
+                    class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                <div class="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100
+                    transition duration-500 flex items-center justify-center">
+                    <p class="text-white text-lg tracking-wide border border-white px-4 py-2">COFFEE THERMOS</p>
+                </div>
             </div>
         </div>
-
         <div class="big-box">
             <img src="img/french-press.jpg" alt="French Press">
         </div>
 
-
         <div class="double-box1">
-            <div class="img1">
-                <img src="img/coffee-grinder (1).jpg" alt="Coffee Grinder">
+            <div class="img1 relative overflow-hidden">
+                <img src="img/coffee-grinder (1).jpg" alt="Coffee Grinder"
+                    class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                <div class="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100
+                    transition duration-500 flex items-center justify-center">
+                    <p class="text-white text-lg tracking-wide border border-white px-4 py-2">COFFEE GRINDER</p>
+                </div>
             </div>
-            <div class="img2">
-                <img src="img/coffee-filter.jpg" alt="Coffee Filter">
-            </div>
-        </div>
 
+            <div class="img2 relative overflow-hidden">
+                <img src="img/coffee-filter.jpg" alt="Coffee Filter"
+                    class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                <div class="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100
+                    transition duration-500 flex items-center justify-center">
+                    <p class="text-white text-lg tracking-wide border border-white px-4 py-2">COFFEE FILTER</p>
+                </div>
+            </div>
+
+        </div>
     </section>
 
 
     <!-- Rodapé  -->
+    <footer class="footer-main">
+
+        <div class="social">
+            <img src="img/facebook.png" alt="Facebook">
+            <img src="img/email.png" alt="Email">
+            <img src="img/instagram1.png" alt="Instagram">
+            <img src="img/whatsapp.png" alt="Whatsapp">
+        </div>
+
+        <div class="payment">
+            <img src="img/mastercard.png" alt="Mastercard">
+            <img src="img/visa.png" alt="Visa">
+            <img src="img/pix.png" alt="Pix">
+        </div>
+
+        <div class="email">
+            <h2>SIGN OUR NEWSLETTER</h2>
+            <input type="text" placeholder="YOUREMAIL@EMAIL.COM">
+        </div>
+
+    </footer>
 
 </body>
 

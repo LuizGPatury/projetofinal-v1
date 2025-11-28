@@ -117,45 +117,51 @@ button.signup {
 
 /* --- Tela inicial/primeiro banner --- */
 .start-screen {
-	display: flex;
-	align-items: stretch;
+	position: relative;
+	width: 100%;
+	height: 80vh;
+	overflow: hidden;
 	margin-bottom: 10px;
-	flex-wrap: wrap;
-}
-
-.start-box {
-	flex: 1;
-	background-color: #e8d8b0;
-	color: #000;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-
-.start-box h1 {
-	font-size: clamp(40px, 10vw, 120px);
-	line-height: 1;
-	margin-bottom: 5px;
-	font-weight: bold;
-}
-
-.subtitle {
-	font-size: clamp(20px, 4vw, 40px);
-	text-decoration: underline;
-	cursor: pointer;
 }
 
 .start-image {
-	flex: 1;
-}
-
-.start-image img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	display: block;
+}
+
+.start-box {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 0;
+	background: rgba(0, 0, 0, 0.45);
+	backdrop-filter: blur(3px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: 0.6s ease;
+	text-align: center;
+	color: white;
+}
+
+.start-screen:hover .start-box {
+	bottom: 0;
+	height: 100%;
+}
+
+.start-box h1 {
+	font-size: clamp(32px, 8vw, 110px);
+	font-weight: bold;
+}
+
+.subtitle {
+	font-size: clamp(14px, 3vw, 28px);
+	text-decoration: underline;
 	cursor: pointer;
 }
 
@@ -167,6 +173,10 @@ button.signup {
 	gap: 10px;
 	flex-wrap: wrap;
 	margin-bottom: 10px;
+}
+
+.central-machinery img {
+	border-radius: 4px;
 }
 
 .big-box {
@@ -188,6 +198,7 @@ button.signup {
 .small-box1 {
 	flex: 1;
 	width: 100%;
+	cursor: pointer;
 }
 
 .big-box img {
@@ -204,30 +215,33 @@ button.signup {
 	height: 100%;
 	object-fit: cover;
 	display: block;
-	cursor: pointer;
 }
 .double-box2 img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	display: block;
-	cursor: pointer;
 }
 
 .small-box1 {
 	flex: 1;
 	background-color: #e8d8b0;
-	color: #000;
+	color: white;
 	display: grid;
 	place-items: center;
 	text-decoration: underline;
+	transition: 0.3s ease;
 }
 
 .small-box1 h1 {
 	font-size: clamp(14px, 5vw, 88px);
 	font-weight: bold;
 }
-
+.small-box1:hover {
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+	transform: translateY(-5px);
+	background: #d6c59e;
+}
 /* --- Tela inicial/segundo banner --- */
 
 .second-banner {
@@ -235,9 +249,73 @@ button.signup {
 	align-items: stretch;
 	flex-wrap: wrap;
 	gap: 10px;
+	margin-bottom: 10px;
+}
+
+.second-banner img {
+	border-radius: 4px;
 }
 
 /* --- Rodapé --- */
+.footer-main {
+	display: flex;
+
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.social {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.social img {
+	height: clamp(20px, 5vw, 50px);
+	cursor: pointer;
+}
+
+.payment {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.payment img {
+	height: clamp(20px, 5vw, 50px);
+	cursor: pointer;
+}
+.email {
+	display: grid;
+	flex: 1;
+	place-items: center;
+}
+
+.email h2 {
+	font-size: clamp(8px, 2.5vw, 18px);
+	text-align: center;
+}
+
+.email input {
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid black;
+	padding: clamp(1px, 0.4vw, 4px);
+	font-size: clamp(6px, 2vw, 14px);
+	background-color: transparent;
+}
+
+.email input::placeholder {
+	font-size: clamp(6px, 2vw, 14px);
+	color: #888;
+}
+
+.img1:hover img,
+.img2:hover img {
+	transform: scale(1.06);
+}
 
 /* --- teste --- */
 
@@ -261,6 +339,20 @@ button.signup {
 
 	.search-box {
 		display: none;
+	}
+
+	@media (max-width: 500px) {
+		.email h2 {
+			font-size: 9px;
+		}
+
+		.email input {
+			font-size: 7px;
+		}
+
+		.email input::placeholder {
+			font-size: 7px;
+		}
 	}
 }
 /* --- teste --- */
